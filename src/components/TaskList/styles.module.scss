@@ -1,0 +1,45 @@
+.container {
+  max-width: 46rem;
+  margin: -1.6875rem auto 2rem;
+  padding: 0 1 rem;
+}
+
+.TaskContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 3.375rem;
+}
+.TaskContainer input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 0;
+  background: var(--gray-500);
+  color: var(--gray-100 );
+}
+
+.TaskContainer input:focus {
+  outline: none;
+}
+
+.TaskContainer button {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0;
+
+  font-weight: bold;
+  font-size: 0.875;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+
+  cursor: pointer;
+}
+
+.TaskContainer button:hover {
+  background: var(--blue);
+}
+.TaskContainer button svg {
+  margin-left: 0.5rem;
+}
