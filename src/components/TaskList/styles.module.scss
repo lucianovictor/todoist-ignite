@@ -1,45 +1,48 @@
 .container {
-  max-width: 46rem;
-  margin: -1.6875rem auto 2rem;
-  padding: 0 1 rem;
-}
-
-.TaskContainer {
   display: flex;
   justify-content: space-between;
   height: 3.375rem;
 }
-.TaskContainer input {
+
+.container input {
   width: 100%;
   border-radius: 8px;
   padding: 1rem;
-  border: 0;
   background: var(--gray-500);
-  color: var(--gray-100 );
+  border: 0;
+  color: var(--gray-100);
 }
 
-.TaskContainer input:focus {
-  outline: none;
+.container input:focus {
+  outline: none !important;
+  border: 1px solid var(--purple-dark);
 }
 
-.TaskContainer button {
-  display: flex;
-  align-items: center;
+.container button {
   padding: 1rem;
+  margin-left: 0.5rem;
   border-radius: 8px;
   border: 0;
-
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   font-weight: bold;
   font-size: 0.875;
   background: var(--blue-dark);
   color: var(--gray-100);
 
-  cursor: pointer;
+  transition: background-color 0.15s;
 }
 
-.TaskContainer button:hover {
+.container button:hover {
   background: var(--blue);
 }
-.TaskContainer button svg {
+
+.container button:focus {
+  outline: none !important;
+  background: var(--blue);
+}
+
+.container button svg {
   margin-left: 0.5rem;
 }
